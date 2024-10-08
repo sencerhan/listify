@@ -19,5 +19,13 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+        /*
+                    $table->string("name");
+            $table->string("code");
+            $table->string("flag");
+            $table->boolean("default")->default(false);
+            $table->boolean("is_deleted")->default(false);*/
+
+
     }
 }

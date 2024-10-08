@@ -18,7 +18,9 @@ return new class extends Migration
             $table->string("meta_description")->nullable();
             $table->string("meta_keywords")->nullable();
             $table->longText("description")->nullable();
+            $table->string("slug")->unique();
             $table->integer("language_id");
+            $table->integer("ad_id");
             $table->timestamps();
         });
     }

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer("sort_order")->default(0);
             $table->integer("currency_id")->default(0);
             $table->decimal("price", 8, 2)->nullable();
+            $table->boolean("is_deleted")->default(false);
             $table->timestamps();
         });
     }
